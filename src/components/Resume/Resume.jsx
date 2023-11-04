@@ -1,5 +1,5 @@
-import resumeDoc from '../../assets/';
-import "./"
+import resumeDoc from '../../assets/brennyresume.pdf';
+import "./Resume.css"
 
 function Resume() {
     return (

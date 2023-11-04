@@ -1,6 +1,6 @@
 // Importing from dependencies react and react-router-dom
 import  { Link } from 'react-router-dom';
-import "./"
+import "./Header.css"
 
 function Header() {
     return (
