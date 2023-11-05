@@ -1,0 +1,23 @@
+.footer {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    margin: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer a {
+    color: black;
+}
+
+.footer a:hover {
+    color: #646cff;
+}
+
+.footer li {
+    list-style-type: none;
+    display: inline;
+    margin-right: 30px;
+}

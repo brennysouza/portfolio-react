@@ -14,9 +14,6 @@ function footer() {
                     <a href="mailto: brennysouza@protonmail.com">Email &#128231;</a>
                 </li>
             </ul>
-            <div className="footer-rights">
-                <h5>&copy; 2023 Brenny Souza / All Rights Are Reserved.</h5>
-            </div>
         </footer>
     );
 }

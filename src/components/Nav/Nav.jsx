@@ -3,13 +3,13 @@
 
 import { Link } from "react-router-dom";
 
-function Navigation() {
+function Nav() {
     return (
         <nav>
         <ul>
             <li>
                 <Link to="/">
-                    About Me
+                    About
                 </Link>
             </li>
             <li>
@@ -32,4 +32,4 @@ function Navigation() {
     );
 }
 
-export default Navigation;
+export default Nav;

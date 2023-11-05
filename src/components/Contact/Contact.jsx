@@ -2,7 +2,8 @@ import "./Contact.css"
 
 function contact() {
     return (
-        <div>Contact</div>
+        <div>Connect with me!</div>
+        
     );
 }
 

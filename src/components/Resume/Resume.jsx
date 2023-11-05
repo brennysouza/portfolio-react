@@ -17,36 +17,35 @@ function Resume() {
                 <ul>
                     <li>
 
-                        <i class="devicon-html5-plain">HTML</i>
+                        HTML
+
+                    </li>
+                    <li>
+                        CSS
 
                     </li>
                     <li>
 
-                        <i class="devicon-css3-plain">CSS</i>
+                        JavaScript
+                    </li>
+                    <li>
+
+                        jQuery
 
                     </li>
                     <li>
 
-                        <i class="devicon-javascript-plain">JavaScript</i>
-                    </li>
-                    <li>
-
-                        <i class="devicon-jquery-plain">jQuery</i>
+                        React
 
                     </li>
                     <li>
 
-                        <i class="devicon-react-original">React</i>
+                        Bootstrap
 
                     </li>
                     <li>
 
-                        <i class="devicon-bootstrap-plain">Bootstrap</i>
-
-                    </li>
-                    <li>
-
-                        <i class="devicon-handlebars-plain">Handlebars</i>
+                        Handlebars
 
                     </li>
                 </ul>
@@ -55,30 +54,30 @@ function Resume() {
                 <h3>Back-end</h3>
                 <ul>
                     <li>
-                        <i class="devicon-nodejs-plain">Node</i>
+                        Node
 
                     </li>
                     <li>
 
-                        <i class="devicon-express-original">Express</i>
+                        Express
 
                     </li>
                     <li>
 
-                        <i class="devicon-mysql-plain">MySQL</i>
+                        MySQL
                     </li>
                     <li>
 
-                        <i class="devicon-sequelize-plain">Sequalize</i>
+                        Sequalize
 
                     </li>
                     <li>
 
-                        <i class="devicon-mongodb-plain">MongoDB & Mongoose</i>
+                        MongoDB & Mongoose
                     </li>
                     <li>
 
-                        <i class="devicon-graphql-plain">GraphQL</i>
+                        GraphQL
 
                     </li>
                 </ul>

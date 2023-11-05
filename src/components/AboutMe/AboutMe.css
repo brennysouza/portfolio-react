@@ -1,24 +1,37 @@
 .aboutMe img{
-    /* box-shadow: 0 0 0 2px #fff; */
     border: 3px solid black;
     height: 200px;
     width: 200px;
     border-radius: 50%;
-    display: flex;
-    top: 33%;
-    right: 30%; 
-    /* position: absolute; */
+    /* display: flex; */
     object-fit: cover;
-    /* flex-wrap: wrap; */
     background-color: white;
     object-fit: cover;
-    margin: 0 auto;
+    margin-left: 50px;
   }
 
   .aboutMe p {
     font-size: 1.2rem;
     line-height: 1.5;
     margin: 1rem 0;
-    padding: 10px;
+    padding: 50px;
     text-align: justify;
+  }
+
+  .aboutMe {
+    text-align: center;
+    margin-top: 80px;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 800px;
+  }
+
+  .hero-content h1 {
+    margin: 0;
   }
