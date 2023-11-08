@@ -25,6 +25,10 @@
     color: cadetblue;
 }
 
+.header ul li a:focus {
+    color: cadetblue;
+}
+
 .header h1 {
     /* margin-top: 0; */
     margin: 10px;

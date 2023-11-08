@@ -1,17 +1,17 @@
 import "./Portfolio.css"
-import projects from '../../projects/projectsInfo.js';
+import projectsInfo from '../../projects/projectsInfo.js';
 import Project from '../Project/Project';
 
 
 
-function portfolio() {
+function Portfolio() {
     return (
         <div className="portfolio">
             <div className="hero-content">
                 <h1>Portfolio</h1>
             </div>
             <div className="project-container">
-                {projects.map((project) => (
+                {projectsInfo.map((project) => (
                     <Project
                         key={project.id}
                         name={project.name}
@@ -26,4 +26,4 @@ function portfolio() {
     );
 }
 
-export default portfolio;
+export default Portfolio;
