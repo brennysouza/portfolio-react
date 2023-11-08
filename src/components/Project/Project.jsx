@@ -1,3 +1,6 @@
+import React from "react";
+import PropTypes from "prop-types";
+
 
 //project prop types
 Project.propTypes = {
