@@ -1,6 +1,8 @@
 .portfolio {
-  width: 100%;
-}
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  }
 
 /* .prortfolio-container {
     display: flex;
@@ -12,16 +14,18 @@
 
 .hero-content h1 {
     padding: 50px;
+    margin-top: 100px;
 }
 
 .project-container {
     display: grid;
     grid-template-columns: 1fr 1fr; 
     grid-template-rows: auto; 
-    grid-gap: 10px; 
-    margin-bottom: 50px;
-    padding: 50px;
+    grid-gap: 30px; 
+    margin-bottom: 100px;
+    /* padding: 50px; */
   }
+  
   .img-card img {
     width: 540px;
     height: 360px;
