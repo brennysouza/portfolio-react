@@ -1,10 +1,13 @@
-import "./Contact.css"
+import React, { useState } from "react";
+import "./Contact.css";
 
-function contact() {
-    return (
-        <div>Connect with me!</div>
-        
-    );
+function Contact() {
+  const [] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
 }
 
-export default contact;
+export default Contact;
+
