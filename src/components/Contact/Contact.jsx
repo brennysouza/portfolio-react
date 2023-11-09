@@ -8,14 +8,14 @@ function Contact() {
     message: "",
   });
 
-// setting errors to empty string
-const [errors, setErrors] = useState({
+  // setting errors to empty string
+  const [errors, setErrors] = useState({
     name: "",
     email: "",
   });
 
-  const inputChange = (dataData) => {
-    const { name, value } = dataData.target;
+  const inputChange = (event) => {
+    const { name, value } = event.target;
     setFormData({
       ...formData,
       [name]: value,
@@ -27,16 +27,18 @@ const [errors, setErrors] = useState({
   };
 
   const emailValid = (email) => {
-    const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const regexEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
     const validRegex = regexEmail.test(email);
     setErrors((errErrors) => ({
       ...errErrors,
       email: validRegex ? "" : "Invalid email address.",
     }));
+    return validRegex;
+    
   };
 
-  const requireName = (dataData) => {
-    const { name, value } = dataData.target;
+  const requireName = (event) => {
+    const { name, value } = event.target;
     if (!value) {
       setErrors((errErrors) => ({
         ...errErrors,
@@ -52,13 +54,52 @@ const [errors, setErrors] = useState({
     }
   };
 
-  const handleSubmit = (dataData) => {
-    dataData.preventDefault();
-    // Add code for form submission 
+  const validateForm = () => {
+    let isValid = true;
+
+    // Validate name
+    if (!formData.name) {
+      setErrors((errErrors) => ({
+        ...errErrors,
+        name: "Name is required",
+      }));
+      isValid = false;
+    } else {
+      setErrors((errErrors) => ({
+        ...errErrors,
+        name: "",
+      }));
+    }
+
+    // Validate email
+    if (!formData.email || !emailValid(formData.email)) {
+      setErrors((errErrors) => ({
+        ...errErrors,
+        email: "Invalid email address",
+      }));
+      isValid = false;
+    } else {
+      setErrors((errErrors) => ({
+        ...errErrors,
+        email: "",
+      }));
+    }
+
+    return isValid;
   };
 
-  const capitalizeFirstLetter = (str) => {
-    return str.charAt(0).toUpperCase() + str.slice(1);
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    if (validateForm()) {
+      console.log("Form submitted:", formData);
+
+      setFormData({
+        name: "",
+        email: "",
+        message: "",
+      });
+    }
   };
 
   return (
@@ -107,6 +148,4 @@ const [errors, setErrors] = useState({
   );
 }
 
-
 export default Contact;
-
