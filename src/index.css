@@ -33,6 +33,27 @@ body {
   min-height: 100vh;
 }
 
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  padding: 10px;
+  color: black;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  padding: 10px;
+  color: black;
+  text-align: center;
+}
+
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
