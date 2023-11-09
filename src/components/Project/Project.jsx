@@ -4,11 +4,11 @@ import PropTypes from "prop-types";
 function Project(props) {
     return (
       <div className="img-card">
-        <a href={props.deployLink}>
+        <a href={props.deployLink} target="_blank">
           <img src={props.image} alt={props.name} />
           <div className="img-text">{props.name}</div>
         </a>
-        <a href={props.github}>GitHub Repository</a>
+        <a href={props.github} target="_blank">GitHub Repository</a>
       </div>
     );
   }

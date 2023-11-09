@@ -1,0 +1,34 @@
+.hero-content h1 {
+    padding: 50px;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: auto; 
+    grid-gap: 30px; 
+    margin-bottom: 50px;
+    padding: 50px;
+  }
+  .img-card img {
+    width: 540px;
+    height: 360px;
+    /* width: 100%; */
+  }
+
+  .img-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  @media screen and (max-width: 768px) {
+    .img-container {
+      grid-template-columns: 1fr; 
+      grid-template-rows: auto; 
+      grid-gap: 10px; 
+    }
+    .img-card {
+      margin: 0px 10px;
+    }
+  }
