@@ -1,12 +1,24 @@
+.portfolio {
+  width: 100%;
+}
+
+/* .prortfolio-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+} */
+
 .hero-content h1 {
     padding: 50px;
 }
 
 .project-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-columns: 1fr 1fr; 
     grid-template-rows: auto; 
-    grid-gap: 30px; 
+    grid-gap: 10px; 
     margin-bottom: 50px;
     padding: 50px;
   }
