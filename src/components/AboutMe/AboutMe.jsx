@@ -1,3 +1,4 @@
+import React from "react";
 import "./AboutMe.css";
 import headshot from "../../assets/headshot.png";
 
