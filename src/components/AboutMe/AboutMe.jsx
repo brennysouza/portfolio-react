@@ -2,6 +2,7 @@ import React from "react";
 import "./AboutMe.css";
 import headshot from "../../assets/headshot.png";
 
+// First page users see when accessing site
 function AboutMe() {
   return (
     <div className="aboutMe">
