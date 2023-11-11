@@ -34,7 +34,7 @@ function Contact() {
       email: validRegex ? "" : "Invalid email address.",
     }));
     return validRegex;
-    
+
   };
 
   const requireName = (event) => {
@@ -103,47 +103,53 @@ function Contact() {
   };
 
   return (
-    <div>
-      <h1>Contact Me</h1>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="name">Name:</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            value={formData.name}
-            onChange={inputChange}
-            onBlur={requireName}
-          />
-          {errors.name && <div className="error">{errors.name}</div>}
+    <div className="contact-container">
+      <div className="contactme">
+        <div className="contacttitle">
+          <h1>Contact Me</h1>
         </div>
+        <div className="contactform">
+          <form onSubmit={handleSubmit}>
+            <div>
+              <label htmlFor="name">Name:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                value={formData.name}
+                onChange={inputChange}
+                onBlur={requireName}
+              />
+              {errors.name && <div className="error">{errors.name}</div>}
+            </div>
 
-        <div>
-          <label htmlFor="email">Email:</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            value={formData.email}
-            onChange={inputChange}
-            onBlur={requireName}
-          />
-          {errors.email && <div className="error">{errors.email}</div>}
+            <div>
+              <label htmlFor="email">Email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                value={formData.email}
+                onChange={inputChange}
+                onBlur={requireName}
+              />
+              {errors.email && <div className="error">{errors.email}</div>}
+            </div>
+
+            <div>
+              <label htmlFor="message">Message:</label>
+              <textarea
+                id="message"
+                name="message"
+                value={formData.message}
+                onChange={inputChange}
+              />
+            </div>
+
+            <button type="submit">Submit</button>
+          </form>
         </div>
-
-        <div>
-          <label htmlFor="message">Message:</label>
-          <textarea
-            id="message"
-            name="message"
-            value={formData.message}
-            onChange={inputChange}
-          />
-        </div>
-
-        <button type="submit">Submit</button>
-      </form>
+      </div>
     </div>
   );
 }
