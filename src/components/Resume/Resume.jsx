@@ -4,83 +4,90 @@ import "./Resume.css"
 function Resume() {
     return (
         <div className="resume">
-            <div>
+            <div className="resumeDoc">
                 <h2>RESUME</h2>
                 <a href={resumeDoc} download>
-                    Click here to download my resume
+                    Download
                 </a>
             </div>
 
-            <div>
+            <div className="techstack">
                 <h2>TECH STACK</h2>
-                <h3>Front-end</h3>
-                <ul>
-                    <li>
-
-                        HTML
-
-                    </li>
-                    <li>
-                        CSS
-
-                    </li>
-                    <li>
-
-                        JavaScript
-                    </li>
-                    <li>
-
-                        jQuery
-
-                    </li>
-                    <li>
-
-                        React
-
-                    </li>
-                    <li>
-
-                        Bootstrap
-
-                    </li>
-                    <li>
-
-                        Handlebars
-
-                    </li>
-                </ul>
             </div>
-            <div>
-                <h3>Back-end</h3>
-                <ul>
-                    <li>
-                        Node
+            <div className="stack">
+                <div className="frontend">
+                    <h3>Front-end</h3>
+                    <ul>
+                        <li>
 
-                    </li>
-                    <li>
+                            HTML
 
-                        Express
+                        </li>
+                        <li>
+                            CSS
 
-                    </li>
-                    <li>
+                        </li>
+                        <li>
 
-                        MySQL
-                    </li>
-                    <li>
+                            JavaScript
+                        </li>
+                        <li>
 
-                        Sequalize
+                            jQuery
 
-                    </li>
-                    <li>
+                        </li>
+                        <li>
 
-                        MongoDB & Mongoose
-                    </li>
-                    <li>
+                            React
 
-                        GraphQL
+                        </li>
+                        <li>
 
-                    </li>
-                </ul>
+                            Bootstrap
+
+                        </li>
+                        <li>
+
+                            Handlebars
+
+                        </li>
+                    </ul>
+                </div>
+                <div className="backend">
+                    <h3>Back-end</h3>
+                    <ul>
+                        <li>
+                            Node
+
+                        </li>
+                        <li>
+
+                            Express
+
+                        </li>
+                        <li>
+
+                            MySQL
+                        </li>
+                        <li>
+
+                            Sequalize
+
+                        </li>
+                        <li>
+
+                            MongoDB
+                        </li>
+                        <li>    
+                            Mongoose
+                        </li>
+                        <li>
+
+                            GraphQL
+
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     );
