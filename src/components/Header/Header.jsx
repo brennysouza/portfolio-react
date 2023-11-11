@@ -1,11 +1,17 @@
 // Importing from dependencies react and react-router-dom
 import  { Link } from 'react-router-dom';
 import "./Header.css"
+import { useTypeFx } from "../../hooks/type-fx";
+// import { useState, useEffect } from 'react';
+
 
 function Header() {
+    const textHeader = useTypeFx("{BRENNY SOUZA}", 300);
     return (
         <header className="header">
-            <h1>BRENNY SOUZA</h1>
+            
+            {/* <h1>&#123;BRENNY SOUZA&#125;</h1> */}
+            <h1>{textHeader}</h1>
 
             <nav>
                 <ul>
