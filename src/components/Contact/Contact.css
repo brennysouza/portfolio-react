@@ -7,7 +7,7 @@
     align-items: center;
     padding: 100px;
     margin-bottom: 50px;
-    
+
 }
 
 .contactme h1 {
@@ -42,13 +42,15 @@
 }
 
 .contactme input, textarea {
-    background-color: lightyellow;
+    background-color: lightgray;
     width: 300%;
     padding: 10px;
     margin-bottom: 30px;
+    margin-right: 400px;
 }
 
-.contacttitle, .contactform {
+.contacttitle,
+.contactform {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -62,6 +64,15 @@
 }
 
 .contacttitle {
-    width: 230%;
+    width: 100%;
 }
 
+.contactform input,
+textarea {
+    width: 100%;
+    color: black;
+}
+
+input:focus {
+    background-color: none;
+}

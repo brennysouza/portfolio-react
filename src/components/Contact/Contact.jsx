@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import "./Contact.css";
 
+const capitalizeFirstLetter = (string) => {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+};
+
 function Contact() {
   const [formData, setFormData] = useState({
     name: "",
@@ -25,6 +29,7 @@ function Contact() {
       emailValid(value);
     }
   };
+
 
   const emailValid = (email) => {
     const regexEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
