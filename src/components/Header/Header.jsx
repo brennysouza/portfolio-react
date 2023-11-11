@@ -6,7 +6,7 @@ import { useTypeFx } from "../../hooks/type-fx";
 
 
 function Header() {
-    const textHeader = useTypeFx("{BRENNY SOUZA}", 300);
+    const textHeader = useTypeFx("BRENNY SOUZA", 250);
     return (
         <header className="header">
             
