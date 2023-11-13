@@ -76,4 +76,56 @@
     padding: 10px;
 }
 
+@media screen and (max-width: 768px) {
+    .resumeDoc {
+        /* flex-direction: column; */
+    }
+    .resumeDoc h2 {
+        padding: 10px;
+        color: black;
+        background-color: white;
+    }
+    .resumeDoc a {
+        color: black;
+        background-color: white;
+        padding: 10px;
+        font-size: 24px;
+    }
+    .resumeDoc a:hover {
+        color: cadetblue;
+    }
+    .resume {
+        padding: 50px;
+    }
+    .techstack {
+        width: 305px;
+    }
+    .stack {
+        /* flex-direction: column; */
+    }
+    .frontend h3 ul, .backend h3 ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+    }
+    .frontend, .backend {
+        display: flex;
+        /* flex-direction: row; */
+        flex-wrap: nowrap;
+        align-content: stretch;
+        align-items: center;
+        background-color: white;
+        color: black;
+        border: 2px solid black;
+        padding: 10px;
+    }
+    .resume li {
+        list-style-type: none;
+        padding: 10px;
+    }
+    
+}
+
 

@@ -13,7 +13,7 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
-  background-image: url("src/assets/reactcloud.jpg");
+  background-image: url("src/assets/reactcloud.jpg") ;
 }
 
 a {
@@ -86,5 +86,26 @@ button:focus-visible {
 
   button {
     background-color: #f9f9f9;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .header ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .header ul li {
+    margin: 10px;
+  }
+  .header h1 {
+    margin: 10px;
+    height: 20px;
   }
 }

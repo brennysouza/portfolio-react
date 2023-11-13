@@ -35,3 +35,19 @@
   .hero-content h1 {
     margin: 0;
   }
+
+  @media (max-width: 768px) {
+    .hero-content {
+      flex-direction: column;
+    }
+    
+    .footer {
+      margin-top: 0;
+      font-size: small;
+    }
+
+    .aboutMe img {
+      margin-left: 0;
+    }
+  }
+

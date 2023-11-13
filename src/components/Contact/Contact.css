@@ -76,3 +76,55 @@ textarea {
 input:focus {
     background-color: none;
 }
+
+@media screen and (max-width: 768px) {
+    .contactme {
+        padding: 10px;
+    }
+
+    .contactme h1 {
+        width: 400px;
+    }
+
+    .contactme form {
+        width: 100%;
+    }
+
+    .contactme input,
+    textarea {
+        width: 100%;
+    }
+
+    .contactme label {
+        width: 100%;
+    }
+
+    .contactme input,
+    textarea {
+        margin-right: 0;
+    }
+    
+}
+
+@media screen and (max-width: 820px) {
+    .contactme input, textarea {
+        width: 200px;
+    }
+    .contactme h1 {
+        width: 350px;
+    }
+
+
+}
+
+@media screen and (max-width: 1040px) {
+    .contactme input, textarea {
+        width: 300px;
+    }
+    .contactme h1 {
+        width: 350px;
+    }
+    
+  }
+
+  

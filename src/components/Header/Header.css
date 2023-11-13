@@ -35,3 +35,29 @@
     margin: 10px;
     font-size: 30px;
 } 
+
+@media screen and (max-width: 760px) {
+    .header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .header ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .header ul li {
+        margin: 10px;
+    }
+    .header h1 {
+        margin: 10px;
+        height: 20px;
+    }
+    
+}
+
+@media screen and (max-width: 500px) {
+    
+}
