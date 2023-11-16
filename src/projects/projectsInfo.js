@@ -20,7 +20,7 @@ const projectsInfo = [
         name: "Horiseon Refactor",
         image: horiseonRefactor,
         description: "I have been tasked by a marketing company to access their website code and refactor it, improving its accessibility.",
-        deployLink: "https://brennysouza.github.io/module-1-challenge/",
+        deployLink: "https://brennysouza.github.io/horiseon-website-refactor-v1/",
         github: "https://github.com/brennysouza/horiseon-website-refactor-v1",
     },
     {
