@@ -1,5 +1,6 @@
 import "./Footer.css"
 
+// below is the footer of the webpage that will display on every page, includes links to social media pages
 function footer() {
     return (
         <footer className="footer">

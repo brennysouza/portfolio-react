@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 
+// Custom hook to simulate typing effect found in header 
 export function useTypeFx (
     typeText,
     keyStrokeMs,
@@ -8,6 +9,7 @@ export function useTypeFx (
     const positionReference = useRef(0);
     const [idInterval, setIdInterval] = useState(null);
 
+// useeffect sets interval to simulate typing effect
     useEffect(() => {
         if (idInterval) {
             console.log("interval");

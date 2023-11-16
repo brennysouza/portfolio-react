@@ -2,10 +2,12 @@ import resumeDoc from '../../assets/brennyresume.pdf';
 import "./Resume.css"
 
 function Resume() {
+    // Resume page on website
     return (
         <div className="resume">
             <div className="resumeDoc">
                 <h2>RESUME</h2>
+                {/* Downloadable resume link */}
                 <a href={resumeDoc} download>
                     Download
                 </a>

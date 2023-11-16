@@ -10,7 +10,7 @@ import Resume from './components/Resume/Resume';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 
-
+// This code routes the user to the correct page based on the URL path
 function App() {
       return (
         <div>

@@ -1,23 +1,28 @@
 import React, { useState } from "react";
 import "./Contact.css";
 
+// Function to capitalize the first letter of a string
+
 const capitalizeFirstLetter = (string) => {
   return string.charAt(0).toUpperCase() + string.slice(1);
 };
 
 function Contact() {
+    // State to manage form data
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     message: "",
   });
 
-  // setting errors to empty string
+  // State to manage form validation errors
   const [errors, setErrors] = useState({
     name: "",
     email: "",
   });
 
+  // Function to handle input change
   const inputChange = (event) => {
     const { name, value } = event.target;
     setFormData({
@@ -25,11 +30,14 @@ function Contact() {
       [name]: value,
     });
 
+    // If the changed input is email, perform email validation
+
     if (name === "email") {
       emailValid(value);
     }
   };
 
+  // Function to validate email format
 
   const emailValid = (email) => {
     const regexEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
@@ -41,6 +49,8 @@ function Contact() {
     return validRegex;
 
   };
+
+    // Function to require name field
 
   const requireName = (event) => {
     const { name, value } = event.target;
@@ -58,6 +68,8 @@ function Contact() {
       }));
     }
   };
+
+    // Function to validate the entire form
 
   const validateForm = () => {
     let isValid = true;
@@ -93,8 +105,12 @@ function Contact() {
     return isValid;
   };
 
+    // Function to handle form submission
+
   const handleSubmit = (event) => {
     event.preventDefault();
+
+        // If the form is valid, log the form data and reset the form
 
     if (validateForm()) {
       console.log("Form submitted:", formData);
@@ -106,6 +122,8 @@ function Contact() {
       });
     }
   };
+
+    // JSX structure for the Contact component input box in the contact page of site
 
   return (
     <div className="contact-container">

@@ -1,7 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+
 function Project(props) {
+  // returns the project information passed from the Portfolio component to be rendered
     return (
       <div className="img-card">
         <a href={props.deployLink} target="_blank">
@@ -13,6 +15,7 @@ function Project(props) {
     );
   }
   
+  // PropTypes for Project component
   Project.propTypes = {
     deployLink: PropTypes.string.isRequired,
     image: PropTypes.string.isRequired,
