@@ -21,7 +21,7 @@ This site utilizes the react framework and can be accessed by the site link. It 
 ## Usage
 [Github Repo](https://github.com/brennysouza/portfolio-react)
 
-[Netlify Deployed Site]()
+[Netlify Deployed Site](https://imaginative-tarsier-eeec1a.netlify.app/)
 
 ![Site Screenshot](src/assets/reactportfoliopic.png)
 
